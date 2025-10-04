@@ -1,0 +1,4 @@
+../Core/Src/VL6180x_api.c:4:5:VL6180x_Init	2
+../Core/Src/VL6180x_api.c:15:5:VL6180x_Prepare	1
+../Core/Src/VL6180x_api.c:53:5:VL6180x_RangePollMeasurement	1
+../Core/Src/VL6180x_api.c:60:5:VL6180x_SetOffset	1
