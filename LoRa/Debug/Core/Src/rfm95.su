@@ -1,0 +1,6 @@
+../Core/Src/rfm95.c:9:13:RFM95_Select	8	static
+../Core/Src/rfm95.c:12:13:RFM95_Unselect	8	static
+../Core/Src/rfm95.c:15:13:RFM95_WriteReg	24	static
+../Core/Src/rfm95.c:23:16:RFM95_ReadReg	24	static
+../Core/Src/rfm95.c:34:5:RFM95_Init	88	static
+../Core/Src/rfm95.c:88:5:RFM95_SendPacket	24	static
