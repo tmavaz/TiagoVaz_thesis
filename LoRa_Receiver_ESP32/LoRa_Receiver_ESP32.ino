@@ -113,9 +113,9 @@ void loop() {
     int rssi = readReg(REG_PKT_RSSI_VALUE);
     rssi -= 157;
 
-    Serial.print("📥 Packet: ");
+    Serial.print("Packet: ");
     Serial.println(msg);
-    Serial.print("📶 Packet's RSSI: ");
+    Serial.print("Packet's RSSI: ");
     Serial.print(rssi);
     Serial.println(" dBm");
 
@@ -127,7 +127,7 @@ void loop() {
     lastRssiCheck = millis();
     int ambientRssi = readReg(REG_RSSI_VALUE);
     ambientRssi -= 157;
-    Serial.print("🌐 RSSI ambiente: ");
+    Serial.print("Environment's RSSI: ");
     Serial.print(ambientRssi);
     Serial.println(" dBm");
   }
