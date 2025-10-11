@@ -1,0 +1,3 @@
+../Core/Src/sensor.c:3:6:update_timestamp	1
+../Core/Src/sensor.c:22:6:update_sensor_timestamp	1
+../Core/Src/sensor.c:32:6:save_data_to_sensor	4

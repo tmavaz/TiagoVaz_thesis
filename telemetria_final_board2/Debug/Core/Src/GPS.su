@@ -1,0 +1,2 @@
+../Core/Src/GPS.c:3:6:write_gps_data	8	static
+../Core/Src/GPS.c:11:6:gps_RxEventCallback	24	static

@@ -1,0 +1,6 @@
+../Core/Src/PWM_sensors.c:9:6:HAL_TIM_IC_CaptureCallback	15
+../Core/Src/PWM_sensors.c:92:6:write_pwm_data	2
+../Core/Src/PWM_sensors.c:101:6:Speed_ISR	1
+../Core/Src/PWM_sensors.c:106:6:Front_suspension_magnet_ISR	1
+../Core/Src/PWM_sensors.c:112:6:Rear_suspension_ISR	1
+../Core/Src/PWM_sensors.c:118:6:Steering_angle_ISR	1

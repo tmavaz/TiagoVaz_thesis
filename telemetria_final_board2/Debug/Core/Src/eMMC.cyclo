@@ -1,0 +1,15 @@
+../Core/Src/eMMC.c:5:6:update_memBlock_nr	2
+../Core/Src/eMMC.c:18:6:get_memBlock_nr	4
+../Core/Src/eMMC.c:42:6:HAL_MMC_TxCpltCallback	1
+../Core/Src/eMMC.c:46:6:HAL_MMC_RxCpltCallback	1
+../Core/Src/eMMC.c:50:6:HAL_MMC_ErrorCallback	1
+../Core/Src/eMMC.c:57:6:Verificar_DMA_Status	15
+../Core/Src/eMMC.c:106:6:SDIO_DMA_Reset	108
+../Core/Src/eMMC.c:135:12:MMC_WriteBlocks	5
+../Core/Src/eMMC.c:157:12:MMC_ReadBlocks	5
+../Core/Src/eMMC.c:190:12:MMC_WriteVerify	4
+../Core/Src/eMMC.c:207:6:SDIO_WriteFirstBlock	3
+../Core/Src/eMMC.c:229:6:SDIO_ReadFirstBlock	5
+../Core/Src/eMMC.c:260:6:save_data_to_mem	6
+../Core/Src/eMMC.c:296:6:Send_Last500_Blocks_UART	9
+../Core/Src/eMMC.c:380:6:SDIO_ReadAllData	8
