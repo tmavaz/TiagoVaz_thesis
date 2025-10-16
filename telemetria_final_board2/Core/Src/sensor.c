@@ -37,14 +37,14 @@ void save_data_to_sensor(Sensor *sensor, uint8_t data){
 		sensor->index = 5;  // avança o índice após 1 byte de tipo + 4 bytes de timestamp
 		sensor->sent_low=0;
 	}
-	if (sensor->index == (sensor_length/2)){
+	if ( ((sensor->index % 512) == 0) && (sensor->index != 0)){
 		sensor->data[sensor_length/2]=sensor->sensorType;
 		update_sensor_timestamp(sensor);
 		memcpy(&sensor->data[(sensor_length/2)+1], &(sensor->timestamp), sizeof(sensor->timestamp));  // guarda timestamp em binário
 		sensor->index = (sensor_length/2) + 5;  // avança o índice após 1 byte de tipo + 4 bytes de timestamp
 	}
 	sensor->data[sensor->index]=data;
-	if (sensor->index == (sensor_length-1))
+	if (sensor->index == (sensor_length-1)) //if sensor_length is chan ged from 1024 this will need to be changed or will not work
 		sensor->send_high=1;
 	sensor->index = (sensor->index + 1) % sensor_length;
 }
