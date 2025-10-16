@@ -119,38 +119,35 @@ int RFM95_SendPacket(uint8_t *data, uint8_t length) {
     // Envio concluído
     return RFM95_OK;
 }
+
 char buffer[20];
 char dbgMsg[50];
 uint16_t counterHello = 0;
+
+
 void SendLoRa(){
 	if (flagLoRaGPS==1){
 		RFM95_SendPacket((uint8_t *)loraGpsMsg.sentence, loraGpsMsg.len);
-		 //sprintf(buffer, "HELLO #%u", counterHello);
-		 //RFM95_SendPacket((uint8_t*)buffer, strlen(buffer));
-		 //counterHello++;              // incrementar contador
 		 flagLoRaGPS=0;
 	}
 	if (flagLoRaIMUAttitude==1){
-		//sprintf(buffer, "Attitude: %d",accel.data[accel.index-1]); //mudar isto só está a fazer um dado do accel
-		//RFM95_SendPacket((uint8_t*)buffer, strlen(buffer));
-
-		//sprintf(dbgMsg, "[LoRa] Enviado: %s\r\n", buffer);
-		//HAL_UART_Transmit(&huart2, (uint8_t*)dbgMsg, strlen(dbgMsg), HAL_MAX_DELAY);
+		//RFM95_SendPacket((uint8_t *)loraIMUMsg.sentence, loraIMUMsg.len);
 		flagLoRaIMUAttitude=0;
 	}
 	if (flagLoRaCAN1Hz==1){
-		 //sprintf(buffer, "HELLO #%u", counterHello);
-		 //RFM95_SendPacket((uint8_t*)buffer, strlen(buffer));
-		 //counterHello++;              // incrementar contador
+		//RFM95_SendPacket((uint8_t *)loraCAN1HzMsg.sentence, loraCAN1HzMsg.len);
 		flagLoRaCAN1Hz=0;
 	}
 	if (flagLoRaCAN2Hz==1){
+		//RFM95_SendPacket((uint8_t *)loraCAN2HzMsg.sentence, loraCAN2HzMsg.len);
 		flagLoRaCAN2Hz=0;
 	}
 	if (flagLoRaSpeed==1){
+		//RFM95_SendPacket((uint8_t *)loraSpeedMsg.sentence, loraSpeedMsg.len);
 		flagLoRaSpeed=0;
 	}
 	if (flagLoRaOil==1){
+		//RFM95_SendPacket((uint8_t *)loraOilMsg.sentence, loraOilMsg.len);
 		flagLoRaOil=0;
 	}
 }

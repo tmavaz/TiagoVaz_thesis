@@ -61,7 +61,13 @@ extern int flagLoRaOil;
 
 
 
-extern LoRaGpsMessage loraGpsMsg;  // acessado no callback e no SendLoRa
+extern LoRaMessage loraGpsMsg;  // acessado no callback e no SendLoRa
+extern LoRaMessage loraIMUMsg;  // acessado no callback e no SendLoRa
+extern LoRaMessage loraCAN1HzMsg;  // acessado no callback e no SendLoRa
+extern LoRaMessage loraCAN2HzMsg;  // acessado no callback e no SendLoRa
+extern LoRaMessage loraSpeedMsg;  // acessado no callback e no SendLoRa
+extern LoRaMessage loraOilMsg;  // acessado no callback e no SendLoRa
+
 // Protótipos de funções do driver
 int RFM95_Init(void);
 int RFM95_SendPacket(uint8_t *data, uint8_t length);

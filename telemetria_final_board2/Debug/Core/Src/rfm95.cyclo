@@ -4,4 +4,4 @@
 ../Core/Src/rfm95.c:21:16:RFM95_ReadReg	1
 ../Core/Src/rfm95.c:32:5:RFM95_Init	2
 ../Core/Src/rfm95.c:86:5:RFM95_SendPacket	4
-../Core/Src/rfm95.c:125:6:SendLoRa	7
+../Core/Src/rfm95.c:128:6:SendLoRa	7

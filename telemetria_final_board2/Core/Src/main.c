@@ -194,7 +194,12 @@ void speedsensorisr(){
 
 
 //RTC---------------------------------------
-LoRaGpsMessage loraGpsMsg;  // acessado no callback e no SendLoRa
+LoRaMessage loraGpsMsg;  // acessado no callback e no SendLoRa
+LoRaMessage loraIMUMsg;  // acessado no callback e no SendLoRa
+LoRaMessage loraCAN1HzMsg;  // acessado no callback e no SendLoRa
+LoRaMessage loraCAN2HzMsg;  // acessado no callback e no SendLoRa
+LoRaMessage loraSpeedMsg;  // acessado no callback e no SendLoRa
+LoRaMessage loraOilMsg;  // acessado no callback e no SendLoRa
 
 
 char uart_msg[1050];

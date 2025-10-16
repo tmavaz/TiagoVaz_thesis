@@ -101,6 +101,7 @@ Dma.UART4_RX.4.PeriphInc=DMA_PINC_DISABLE
 Dma.UART4_RX.4.Priority=DMA_PRIORITY_HIGH
 Dma.UART4_RX.4.RequestParameters=Instance,Direction,PeriphInc,MemInc,PeriphDataAlignment,MemDataAlignment,Mode,Priority,FIFOMode
 File.Version=6
+GPIO.groupedBy=Group By Peripherals
 KeepUserPlacement=false
 Mcu.CPN=STM32F446RET7
 Mcu.Family=STM32F4

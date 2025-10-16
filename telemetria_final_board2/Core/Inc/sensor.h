@@ -30,7 +30,7 @@ void save_data_to_sensor(Sensor *sensor, uint8_t data);
 
 typedef struct {
     char sentence[512];    // buffer da sentença NMEA terminada em '\0'
-    uint16_t len;                    // comprimento real em bytes (incluindo '\0')
-} LoRaGpsMessage;
+    uint16_t len;          // comprimento real em bytes (incluindo '\0')
+} LoRaMessage;
 
 

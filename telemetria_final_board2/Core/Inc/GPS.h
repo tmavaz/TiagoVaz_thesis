@@ -23,4 +23,4 @@ void gps_RxEventCallback(uint16_t Size);
 
 
 
-extern LoRaGpsMessage loraGpsMsg;
+extern LoRaMessage loraGpsMsg;
